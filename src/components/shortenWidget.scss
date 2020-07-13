@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+$blue: rgb(94,154,213);
+
+.shrtnURL {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 1.5em;
+  right: 3em;
+  .open-button {
+    display: inline-block;
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    border: 0.5px solid $blue;
+    margin-left: auto;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .ui-body {
+    margin-top: 1em;
+    padding: 1em;
+    border: 0.5px solid $blue;
+    border-radius: 5px;
+    flex-direction: column;
+    .text-conversion-area {
+      height: 5em;
+      width: 100%;
+      resize: none;
+    }
+    .generate-button {
+      width: 3em;
+      height: 3em;
+      border-radius: 50%;
+      margin: 1em auto auto auto;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
